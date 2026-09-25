@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <style>
+        /* Element selector */
+        body {
+            background-color: #f2f6fc;
+            color: #222222;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Main h1 heading */
+        h1 {
+            color: #ffd166;
+            margin-bottom: 15px;
+        }
+
+        /* Section headings */
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 25px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #d9e2ec;
+        }
+
+        /* Class selector */
+        .highlight {
+            color: #0b7a4b;
+            font-weight: bold;
+        }
+
+        /* ID selector */
+        #student-name {
+            color: #e63946;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: #457b9d;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #b8c6d1;
+            padding: 12px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f9fb;
+        }
+
+        ul {
+            background-color: #f7f9fb;
+            padding: 20px 40px;
+            border: 1px solid #d9e2ec;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 95%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #aab7c4;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        button {
+            padding: 10px 18px;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        .reset-button {
+            background-color: #cccccc;
+            color: #222222;
+        }
+
+        /* Bonus Challenge */
+        .badge {
+            background-color: #ffd166;
+            color: #6b4f00;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Portal</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+
+            <p>
+                Welcome to the Student Portal.
+                Here you can view your profile, skills,
+                weekly schedule, and register for courses.
+            </p>
+        </section>
+
+        <!-- Student Profile -->
+        <section id="profile">
+            <h2>Student Profile</h2>
+
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <span id="student-name">Gokul K</span>
+                       
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Student ID</td>
+                    <td>26bcs10065</td>
+                </tr>
+
+                <tr>
+                    <td>Program</td>
+                    <td class="highlight">Computer Science</td>
+                </tr>
+
+                <tr>
+                    <td>Year</td>
+                    <td>1st Year</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <a href="mailto:gokul@example.com">
+                            gokul@example.com
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <!-- Weekly Schedule -->
+        <section id="courses">
+            <h2>Weekly Schedule</h2>
+
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>2:00 PM</th>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Mathematics</td>
+                    <td>DSA</td>
+                </tr>
+
+                <tr>
+                    <td>Tuesday</td>
+                    <td>CSS</td>
+                    <td>DBMS</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript</td>
+                    <td>DSA</td>
+                    <td>Mathematics</td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td>DBMS</td>
+                    <td>HTML</td>
+                    <td>Project</td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>DSA</td>
+                    <td>CSS</td>
+                    <td>Workshop</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Course Registration -->
+        <section id="register">
+            <h2>Course Registration</h2>
+
+            <form>
+
+                <!-- Student Information -->
+                <h3>Student Information</h3>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="student-id"
+                        name="student-id"
+                        placeholder="Enter your student ID"
+                    >
+                </div>
+
+                <!-- Course Selection -->
+                <h3>Course Selection</h3>
+
+                <div class="form-group">
+                    <label for="course">Select Course:</label>
+                    <br>
+
+                    <select id="course" name="course">
+                        <option value="">Select Course</option>
+                        <option value="html-css">HTML &amp; CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="dsa">Data Structures</option>
+                        <option value="dbms">Database Management</option>
+                    </select>
+                </div>
+
+                <!-- Learning Mode -->
+                <h3>Preferred Learning Mode</h3>
+
+                <div class="form-group">
+                    <input
+                        type="radio"
+                        id="online"
+                        name="learning-mode"
+                        value="online"
+                    >
+                    <label for="online">Online</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="offline"
+                        name="learning-mode"
+                        value="offline"
+                    >
+                    <label for="offline">Offline</label>
+                </div>
+
+                <!-- Existing Skills -->
+                <h3>Skills You Already Know</h3>
+
+                <div class="form-group">
+
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="skills"
+                        value="html"
+                    >
+                    <label for="html">HTML</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="css"
+                        name="skills"
+                        value="css"
+                    >
+                    <label for="css">CSS</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="javascript"
+                        name="skills"
+                        value="javascript"
+                    >
+                    <label for="javascript">JavaScript</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="python"
+                        name="skills"
+                        value="python"
+                    >
+                    <label for="python">Python</label>
+
+                </div>
+
+                <!-- Buttons -->
+                <button type="submit" class="submit-button">
+                    Submit
+                </button>
+
+                <button type="reset" class="reset-button">
+                    Reset
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
